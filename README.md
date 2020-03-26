@@ -39,12 +39,10 @@ Let's try it out.
 ***********
 
 n=eval(input())
-a=64+n
-for i in range(n*2-1):
-    print('-'.join(chr(a).center(10)))
-    if(i<n-1):
-        a-=1
-    else:
-        a+=1
+l=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+for i in range(1,n+1):
+    print("-".join(l[:i*2-1]).center(n*4-3,"-"))
+for j in range(n-1,0,-1):
+    print("-".join(l[:j*2-1]).center(n*4-3,"-"))
 
 
